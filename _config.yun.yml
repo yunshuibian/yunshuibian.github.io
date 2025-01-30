@@ -1,0 +1,106 @@
+favicon: /images/favicon.ico
+banner:
+  enable: true
+  title: 踏着梦走过时光
+  border: true
+  cloud:
+    enable: true
+    color: white
+  go_down:
+    enable: true
+    icon: ri:arrow-down-s-line
+notice:
+  enable: true
+  content: 欢迎光临我的世界
+bg_image:
+  enable: true
+  url: /images/background.png
+  # dark:
+  blur: 10px # 设置背景模糊程度
+  opacity: 0.6
+# _config.yun.yml
+medium_zoom: true
+avatar:
+  enable: true
+  url: /images/avatar.png
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
+  status:
+    enable: true
+    message: 四季花开
+sidebar:
+  bg_image: /images/background1.png
+  url: /images/background1.png
+  bg_position: bottom 3rem center
+  tagcloud:
+    enable: false
+    amount: 20
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: ri:genderless-line
+    color: dodgerblue
+menu:
+  home:
+    path: /
+    icon: ri:home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: ri:archive-line
+    - type: categories
+      path: /categories/
+      icon: ri:folder-2-line
+    - type: tags
+      path: /tags/
+      icon: ri:price-tag-3-line
+  # 自定义内容你可以看云游君提供的文档
+  # custom:
+  #   title: 文档
+  #   path: https://yun.yunyoujun.cn
+  #   icon: ri:settings-line
+footer:
+  since: 2024 # 起始年份
+  # icon:
+  #   name: ri:cloud-line
+  #   animated: true
+  #   color: '#0078E7'
+  #   url: 你的链接
+  #   title: 自拟
+  powered:
+    enable: true # 是否显示主题名称
+  # beian:
+  #   enable: true # 是否显示备案
+  #   # ICP备案
+  #   icp: 苏ICP备xxxxxxxxxx号
+  #   # 公安备案
+  #   gongan:
+  #     enable: true
+  #     text: 苏公网安备XXXXXXXX号
+  #     id: XXXXXXXX
+ 
+  live_time: # 运行时间
+    enable: true
+    prefix: 感谢陪伴
+    suffix: (●'◡'●)
+    start_time: '2025-01-28T00:00:00' # 开始时间
+ 
+  support: # 支持，例如又拍云联盟之类的
+    enable: true
+    title: 云水边
+    link: https://yunshuibian.github.io/_
+     
+#下面是自定义文本，你可以自由填写
+  custom_text: YourText <a href="yourLink" rel="noopener" target="_blank">Description</a>
+fireworks:
+  enable: true
+  colors:
+    - '102, 167, 221'
+    - '62, 131, 225'
+    - '33, 78, 194'
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - .markdown-body img
