@@ -15,50 +15,50 @@ document.addEventListener("pjax:success", initScrollReveal);
 <meta property="og:site_name" content="ZmRzのblog">
 <meta property="og:description" content="sql注入的类型sql注入按照查询字段分为字符型和数字型 判断sql注入的类型可以输入and 1&#x3D;1，和and 1 &#x3D;2因为1和2都是字符串所以显示正常的是字符型注入 也可以使用减法进行判断字符型减法不做改变而数字型会改变 字符型输入的参数为字符串 数字型输入的参数为整形 注入方法union注入，报错注入，布尔注入，时间注入 注入点：一个能够进行注入的地方如input the">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20240929002216941.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005095632900.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005100541709.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005100812747.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005193220347.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005193402328.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006145156921.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006145406562.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006212907210.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012100356103.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012150658197.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012151924896.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012152814755.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154000120.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154147167.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154738251.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012155404285.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012155724431.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012160455486.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102171715572.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102172244240.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102181809525.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102182924273.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241108173440751.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241108163907348.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110201326135.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110203213764.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110205051565.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110205453354.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110203839847.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110212510663.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110212807632.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213232332.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213310341.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213719541.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112002434083.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112003701231.png">
-<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112004220309.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20240929002216941.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005095632900.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005100541709.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005100812747.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005193220347.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005193402328.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006145156921.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006145406562.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006212907210.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012100356103.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012150658197.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012151924896.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012152814755.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154000120.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154147167.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154738251.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012155404285.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012155724431.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012160455486.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102171715572.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102172244240.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102181809525.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102182924273.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241108173440751.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241108163907348.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110201326135.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110203213764.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110205051565.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110205453354.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110203839847.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110212510663.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110212807632.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213232332.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213310341.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213719541.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112002434083.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112003701231.png">
+<meta property="og:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112004220309.png">
 <meta property="article:published_time" content="2025-01-28T04:07:55.000Z">
 <meta property="article:modified_time" content="2025-01-30T03:05:06.222Z">
 <meta property="article:author" content="云水边">
 <meta property="article:tag" content="热爱">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20240929002216941.png"><script>(function() {
+<meta name="twitter:image" content="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20240929002216941.png"><script>(function() {
   if (CONFIG.mode !== 'auto') return
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
   const setting = localStorage.getItem('darken-mode') || 'auto'
@@ -85,7 +85,7 @@ IconifyProviders = {
 <h2 id="判断闭合方式"><a href="#判断闭合方式" class="headerlink" title="判断闭合方式"></a><strong>判断闭合方式</strong></h2><p>字符型需要闭合符’,数字型则不需要闭合符来闭合</p>
 <p>闭合方式‘    “   ’）  ”）</p>
 <p>使用‘进行闭合报错就说明为’闭合</p>
-<h2 id="闭合的作用"><a href="#闭合的作用" class="headerlink" title="闭合的作用"></a>闭合的作用</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20240929002216941.png" class="" title="image-20240929002216941" loading="lazy">
+<h2 id="闭合的作用"><a href="#闭合的作用" class="headerlink" title="闭合的作用"></a>闭合的作用</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20240929002216941.png" class title="image-20240929002216941" loading="lazy">
 
 <p>判断原来查询的列数 ，union查询前后列数需要一致 ，group by 可以进行查寻列数</p>
 <p>将id改为-1查询回显位</p>
@@ -94,128 +94,128 @@ IconifyProviders = {
 <p>3 如果是字符型，找到闭合方式</p>
 <p>4 半段查询列数，group by     order by</p>
 <p>5 查询回显位置，-1</p>
-<h2 id="union-注入"><a href="#union-注入" class="headerlink" title="union 注入"></a>union 注入</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005095632900.png" class="" title="image-20241005095632900" loading="lazy">
+<h2 id="union-注入"><a href="#union-注入" class="headerlink" title="union 注入"></a>union 注入</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005095632900.png" class title="image-20241005095632900" loading="lazy">
 
 <p>利用回显位置datebase（）拿到库名</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005100541709.png" class="" title="image-20241005100541709" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005100541709.png" class title="image-20241005100541709" loading="lazy">
 
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005100812747.png" class="" title="image-20241005100812747" loading="lazy">
-
-
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005100812747.png" class title="image-20241005100812747" loading="lazy">
 
 
 
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005193220347.png" class="" title="image-20241005193220347" loading="lazy">
 
-<h2 id="数字型注入"><a href="#数字型注入" class="headerlink" title="数字型注入"></a>数字型注入</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005193402328.png" class="" title="image-20241005193402328" loading="lazy">
 
-<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006145156921.png" class="" title="image-20241006145156921" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005193220347.png" class title="image-20241005193220347" loading="lazy">
 
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006145406562.png" class="" title="image-20241006145406562" loading="lazy">
+<h2 id="数字型注入"><a href="#数字型注入" class="headerlink" title="数字型注入"></a>数字型注入</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241005193402328.png" class title="image-20241005193402328" loading="lazy">
+
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006145156921.png" class title="image-20241006145156921" loading="lazy">
+
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006145406562.png" class title="image-20241006145406562" loading="lazy">
 
 <h2 id="extract报错注入"><a href="#extract报错注入" class="headerlink" title="extract报错注入"></a>extract报错注入</h2><p>extractvalue()包含两个参数</p>
 <p>第一个参数是xml文档对象名称，第二个参数是路径</p>
-<style>.mvidxioiwmfc{zoom: 33%;}</style><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006212907210.png" class="mvidxioiwmfc" alt="image-20241006212907210" loading="lazy">
+<style>.echvsobndwcg{zoom: 33%;}</style><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241006212907210.png" class="echvsobndwcg" alt="image-20241006212907210" loading="lazy">
 
 
 
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012100356103.png" class="" title="image-20241012100356103" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012100356103.png" class title="image-20241012100356103" loading="lazy">
 
 <p>concat用于拼接，concat（）也需要两个参数其中第一个参数可以是’~‘</p>
 <p>或者0x7e，第二个参数为（）中的执行命令如select database()</p>
 <p>extractbalue报错注入查询语句</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012150658197.png" class="" title="image-20241012150658197" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012150658197.png" class title="image-20241012150658197" loading="lazy">
 
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012151924896.png" class="" title="image-20241012151924896" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012151924896.png" class title="image-20241012151924896" loading="lazy">
 
 <p>报错注入没此返回32个字符解决方法</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012152814755.png" class="" title="image-20241012152814755" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012152814755.png" class title="image-20241012152814755" loading="lazy">
 
-<h2 id="updatexml报错注入"><a href="#updatexml报错注入" class="headerlink" title="updatexml报错注入"></a>updatexml报错注入</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154000120.png" class="" title="image-20241012154000120" loading="lazy">
+<h2 id="updatexml报错注入"><a href="#updatexml报错注入" class="headerlink" title="updatexml报错注入"></a>updatexml报错注入</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154000120.png" class title="image-20241012154000120" loading="lazy">
 
 <p>注入查询（）之中的语句一样</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154147167.png" class="" title="image-20241012154147167" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154147167.png" class title="image-20241012154147167" loading="lazy">
 
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154738251.png" class="" title="image-20241012154738251" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012154738251.png" class title="image-20241012154738251" loading="lazy">
 
 <h2 id="floor报错注入"><a href="#floor报错注入" class="headerlink" title="floor报错注入"></a>floor报错注入</h2><p>floor报错所需要的函数，以及完整的命令</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012155404285.png" class="" title="image-20241012155404285" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012155404285.png" class title="image-20241012155404285" loading="lazy">
 
 <p>rand（）函数可以进行判断表的行数</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012155724431.png" class="" title="image-20241012155724431" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012155724431.png" class title="image-20241012155724431" loading="lazy">
 
 <p>concat_ws()函数的使用</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012160455486.png" class="" title="image-20241012160455486" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241012160455486.png" class title="image-20241012160455486" loading="lazy">
 
 <p>group by自句即为分组语句常用于结合统计</p>
 <p>as别名</p>
 <p>count（）汇总统计数量</p>
 <p>limit这里用于显示指定行数</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102171715572.png" class="" title="image-20241102171715572" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102171715572.png" class title="image-20241102171715572" loading="lazy">
 
 <p>floor报错的原因是将concat_ws中进行统计时group中的键值出现冲突所导致的</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102172244240.png" class="" title="image-20241102172244240" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102172244240.png" class title="image-20241102172244240" loading="lazy">
 
 <p>报错过程如上图，会出现键值冲突</p>
 <h1 id="sql盲注"><a href="#sql盲注" class="headerlink" title="sql盲注"></a>sql盲注</h1><h2 id="布尔盲注"><a href="#布尔盲注" class="headerlink" title="布尔盲注"></a>布尔盲注</h2><p>盲注分为布尔盲注，时间盲注，报错盲注</p>
 <p>当页面不存在回显时，存在真假判断时使用盲注</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102181809525.png" class="" title="image-20241102181809525" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102181809525.png" class title="image-20241102181809525" loading="lazy">
 
 <p>布尔盲注的判断方法</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102182924273.png" class="" title="image-20241102182924273" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241102182924273.png" class title="image-20241102182924273" loading="lazy">
 
 <p>布尔盲注判断闭合方式</p>
 <p>ascii()该函数是将字符变成一个对应的数字</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241108173440751.png" class="" title="image-20241108173440751" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241108173440751.png" class title="image-20241108173440751" loading="lazy">
 
 <p>函数substr（）在布尔盲注中可以进行使用</p>
 <p>在布尔盲注中将所写的查询语句放入ascii（）中进行判断</p>
-<h2 id="时间盲注"><a href="#时间盲注" class="headerlink" title="时间盲注"></a>时间盲注</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241108163907348.png" class="" title="image-20241108163907348" loading="lazy">
+<h2 id="时间盲注"><a href="#时间盲注" class="headerlink" title="时间盲注"></a>时间盲注</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241108163907348.png" class title="image-20241108163907348" loading="lazy">
 
 <p>时间盲注关键函数为sleep（）</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110201326135.png" class="" title="image-20241110201326135" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110201326135.png" class title="image-20241110201326135" loading="lazy">
 
 <p>需要用到if条件进行判断，括号中第二个是反应为真时触发，第三个反应为假时触发</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110203213764.png" class="" title="image-20241110203213764" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110203213764.png" class title="image-20241110203213764" loading="lazy">
 
 <p>其余语句和之前的相同</p>
 <h2 id="DNSlog注入"><a href="#DNSlog注入" class="headerlink" title="DNSlog注入"></a>DNSlog注入</h2><p>使用dnslog注入需要对服务器的文件有读写权限</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110205051565.png" class="" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110205051565.png" class loading="lazy">
 
 <p>该指令可以读取其文件中的内容</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110205453354.png" class="" title="image-20241110205453354" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110205453354.png" class title="image-20241110205453354" loading="lazy">
 
 <p>所需要用到这两个网站</p>
 <p>dnslog注入输入盲注的一种可以使用时间盲注的方法进行判断</p>
 <h1 id="sql注入的文件上传"><a href="#sql注入的文件上传" class="headerlink" title="sql注入的文件上传"></a>sql注入的文件上传</h1><p>先判断是否具有文件读写权限</p>
 <p>使用into outflie指令必须知道一个完整的路径</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110203839847.png" class="" title="image-20241110203839847" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110203839847.png" class title="image-20241110203839847" loading="lazy">
 
 <h1 id="POST提交"><a href="#POST提交" class="headerlink" title="POST提交"></a>POST提交</h1><p>与get提交不同post提交没有缓存并且无法成为标签进行收藏，get提交有长度要求</p>
 <p>最长2048个字符，post提交还可以用二进制数据</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110212510663.png" class="" title="image-20241110212510663" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110212510663.png" class title="image-20241110212510663" loading="lazy">
 
 <p>#使用来将后面代码注释掉，可以不用去输入密码。 admin‘后跟着的</p>
 <p>1&#x3D;1永远为真</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110212807632.png" class="" title="image-20241110212807632" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110212807632.png" class title="image-20241110212807632" loading="lazy">
 
 <p>其中注入语法与前面get注入相同并未进行改变</p>
-<h2 id="post提交爆错注入"><a href="#post提交爆错注入" class="headerlink" title="post提交爆错注入"></a>post提交爆错注入</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213232332.png" class="" title="image-20241110213232332" loading="lazy">
+<h2 id="post提交爆错注入"><a href="#post提交爆错注入" class="headerlink" title="post提交爆错注入"></a>post提交爆错注入</h2><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213232332.png" class title="image-20241110213232332" loading="lazy">
 
 <p>与get提交相似其语句与报错注入相同</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213310341.png" class="" title="image-20241110213310341" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213310341.png" class title="image-20241110213310341" loading="lazy">
 
 <h2 id="post提交中的盲注"><a href="#post提交中的盲注" class="headerlink" title="post提交中的盲注"></a>post提交中的盲注</h2><p>盲注的语法与前面get传参也是相同的</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213719541.png" class="" title="image-20241110213719541" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241110213719541.png" class title="image-20241110213719541" loading="lazy">
 
-<h1 id="sql注入过滤"><a href="#sql注入过滤" class="headerlink" title="sql注入过滤"></a>sql注入过滤</h1><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112002434083.png" class="" title="image-20241112002434083" loading="lazy">
+<h1 id="sql注入过滤"><a href="#sql注入过滤" class="headerlink" title="sql注入过滤"></a>sql注入过滤</h1><img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112002434083.png" class title="image-20241112002434083" loading="lazy">
 
 <p>注释符号的作用</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112003701231.png" class="" title="image-20241112003701231" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112003701231.png" class title="image-20241112003701231" loading="lazy">
 
 <p>绕过and和or的方法</p>
 <p>绕过空格</p>
-<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112004220309.png" class="" title="image-20241112004220309" loading="lazy">
+<img src="/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/image-20241112004220309.png" class title="image-20241112004220309" loading="lazy">
 
 </div></section><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><span class="icon iconify" data-icon="ri:hand-coin-line"></span></span><div id="reward-comment">I'm so cute. Please give me money.</div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>云水边</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/" title="sql注入学习">http://example.com/2025/01/28/sql%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2025/01/29/rce%E5%AD%A6%E4%B9%A0/" rel="prev" title="rce学习"><span class="icon iconify" data-icon="ri:arrow-left-s-line"></span><span class="post-nav-text">rce学习</span></a></div><div class="post-nav-item"></div></div></div><div class="hty-card" id="comment"></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2024 – 2025 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> 云水边</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v7.3.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.11</span></div><div class="live-time"><span>感谢陪伴</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
   setTimeout(blog_live_time, 1000);
